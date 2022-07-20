@@ -1,4 +1,4 @@
-package decorators;
+package com.example.multitenancydemo.decorators;
 
 import com.example.multitenancydemo.util.TenantContext;
 import lombok.NonNull;

@@ -1,7 +1,7 @@
 package com.example.multitenancydemo.config;
 
 
-import decorators.TenantAwareTaskDecorator;
+import com.example.multitenancydemo.decorators.TenantAwareTaskDecorator;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.AsyncConfigurerSupport;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
