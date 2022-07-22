@@ -1,0 +1,29 @@
+multitenancy:
+  datasource-cache:
+    maximumSize: 100
+    expireAfterAccess: 1
+  master:
+    repository:
+      packages: com.example.multitenancydemo.repositories
+    entityManager:
+      packages: com.example.multitenancydemo.config
+    datasource:
+      url: jdbc:postgresql://localhost:5432/public
+      username: postgres
+      password: admin
+  tenant:
+    repository:
+      packages: com.example.multitenancydemo.repositories
+    entityManager:
+      packages: com.example.multitenancydemo.config
+    datasource:
+      url-prefix: jdbc:postgresql://localhost:5432/
+      hikari:
+        maximumPoolSize: 2
+        minimumIdle: 0
+        idleTimeout: 30000
+
+
+encryption:
+  secret: test
+  salt: test
