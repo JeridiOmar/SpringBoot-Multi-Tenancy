@@ -6,7 +6,7 @@ multitenancy:
     repository:
       packages: com.example.multitenancydemo.multitenancy.repositories
     entityManager:
-      packages: com.example.multitenancydemo.multitenancy.config
+      packages: com.example.multitenancydemo.multitenancy.entity
     datasource:
       url: jdbc:postgresql://localhost:5432/public
       username: postgres
@@ -15,9 +15,9 @@ multitenancy:
       changeLog: classpath:db/changelog/db.changelog-master.yaml
   tenant:
     repository:
-      packages: com.example.multitenancydemo.multitenancy.repositories
+      packages: com.example.multitenancydemo.repository
     entityManager:
-      packages: com.example.multitenancydemo.multitenancy.config
+      packages: com.example.multitenancydemo.entity
     datasource:
       url-prefix: jdbc:postgresql://localhost:5432/
       hikari:
