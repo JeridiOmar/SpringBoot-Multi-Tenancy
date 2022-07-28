@@ -11,6 +11,8 @@ multitenancy:
       url: jdbc:postgresql://localhost:5432/public
       username: postgres
       password: admin
+    liquibase:
+      changeLog: classpath:db/changelog/db.changelog-master.yaml
   tenant:
     repository:
       packages: com.example.multitenancydemo.repositories
@@ -22,6 +24,9 @@ multitenancy:
         maximumPoolSize: 2
         minimumIdle: 0
         idleTimeout: 30000
+    liquibase:
+      changeLog: classpath:db/changelog/db.changelog-tenant.yaml
+
 
 
 encryption:
