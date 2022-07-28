@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
 import org.hibernate.cfg.AvailableSettings;
 import org.springframework.beans.factory.annotation.Autowired;

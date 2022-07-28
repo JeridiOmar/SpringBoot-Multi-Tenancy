@@ -1,6 +1,6 @@
-package com.example.multitenancydemo.controller;
+package com.example.multitenancydemo.multitenancy.controller;
 
-import com.example.multitenancydemo.services.TenantManagementService;
+import com.example.multitenancydemo.multitenancy.services.TenantManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ public class TenantsApiController {
     private TenantManagementService tenantManagementService;
 
     @PostMapping("/tenants")
-    public ResponseEntity<Void> createTenant(@RequestParam String tenantId, @RequestParam String db, @RequestParam String password) {
+    public ResponseEntity<Void> createTenant(@RequestParam String tenantId, @RequestParam String db, @RequestParam String password) throws Exception {
         tenantManagementService.createTenant(tenantId, db, password);
         return new ResponseEntity<>(HttpStatus.OK);
     }

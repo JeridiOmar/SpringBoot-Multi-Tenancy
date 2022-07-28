@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;

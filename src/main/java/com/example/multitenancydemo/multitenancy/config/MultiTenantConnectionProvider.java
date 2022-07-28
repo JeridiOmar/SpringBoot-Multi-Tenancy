@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
 import org.hibernate.service.Service;
 import org.hibernate.service.spi.Wrapped;

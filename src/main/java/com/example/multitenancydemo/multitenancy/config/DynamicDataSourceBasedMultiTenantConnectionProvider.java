@@ -1,7 +1,7 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
-import com.example.multitenancydemo.entity.metadata.Tenant;
-import com.example.multitenancydemo.repositories.TenantRepository;
+import com.example.multitenancydemo.multitenancy.entity.Tenant;
+import com.example.multitenancydemo.multitenancy.repositories.TenantRepository;
 import com.example.multitenancydemo.util.EncryptionService;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

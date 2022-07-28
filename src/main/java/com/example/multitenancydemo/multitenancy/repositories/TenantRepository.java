@@ -1,6 +1,6 @@
-package com.example.multitenancydemo.repositories;
+package com.example.multitenancydemo.multitenancy.repositories;
 
-import com.example.multitenancydemo.entity.metadata.Tenant;
+import com.example.multitenancydemo.multitenancy.entity.Tenant;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

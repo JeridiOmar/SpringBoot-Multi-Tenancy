@@ -4,9 +4,9 @@ multitenancy:
     expireAfterAccess: 1
   master:
     repository:
-      packages: com.example.multitenancydemo.repositories
+      packages: com.example.multitenancydemo.multitenancy.repositories
     entityManager:
-      packages: com.example.multitenancydemo.config
+      packages: com.example.multitenancydemo.multitenancy.config
     datasource:
       url: jdbc:postgresql://localhost:5432/public
       username: postgres
@@ -15,9 +15,9 @@ multitenancy:
       changeLog: classpath:db/changelog/db.changelog-master.yaml
   tenant:
     repository:
-      packages: com.example.multitenancydemo.repositories
+      packages: com.example.multitenancydemo.multitenancy.repositories
     entityManager:
-      packages: com.example.multitenancydemo.config
+      packages: com.example.multitenancydemo.multitenancy.config
     datasource:
       url-prefix: jdbc:postgresql://localhost:5432/
       hikari:

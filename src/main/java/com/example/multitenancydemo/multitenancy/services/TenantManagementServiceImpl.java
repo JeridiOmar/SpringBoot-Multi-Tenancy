@@ -1,7 +1,7 @@
-package com.example.multitenancydemo.services;
+package com.example.multitenancydemo.multitenancy.services;
 
-import com.example.multitenancydemo.entity.metadata.Tenant;
-import com.example.multitenancydemo.repositories.TenantRepository;
+import com.example.multitenancydemo.multitenancy.entity.Tenant;
+import com.example.multitenancydemo.multitenancy.repositories.TenantRepository;
 import com.example.multitenancydemo.util.EncryptionService;
 import liquibase.exception.LiquibaseException;
 import liquibase.integration.spring.SpringLiquibase;

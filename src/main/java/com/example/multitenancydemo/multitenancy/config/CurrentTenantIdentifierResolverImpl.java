@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
 import com.example.multitenancydemo.util.TenantContext;
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;

@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.entity.metadata;
+package com.example.multitenancydemo.multitenancy.entity;
 
 import lombok.*;
 

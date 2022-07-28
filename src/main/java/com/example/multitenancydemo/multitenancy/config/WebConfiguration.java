@@ -1,6 +1,6 @@
-package com.example.multitenancydemo.config;
+package com.example.multitenancydemo.multitenancy.config;
 
-import com.example.multitenancydemo.interceptors.TenantInterceptor;
+import com.example.multitenancydemo.multitenancy.interceptors.TenantInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.interceptors;
+package com.example.multitenancydemo.multitenancy.interceptors;
 
 import com.example.multitenancydemo.util.TenantContext;
 import org.springframework.stereotype.Component;

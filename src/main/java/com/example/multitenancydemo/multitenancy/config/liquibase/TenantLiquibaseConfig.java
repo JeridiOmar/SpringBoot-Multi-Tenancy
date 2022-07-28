@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config.liquibase;
+package com.example.multitenancydemo.multitenancy.config.liquibase;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;

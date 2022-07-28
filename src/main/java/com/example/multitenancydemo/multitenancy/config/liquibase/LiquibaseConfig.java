@@ -1,4 +1,4 @@
-package com.example.multitenancydemo.config.liquibase;
+package com.example.multitenancydemo.multitenancy.config.liquibase;
 
 import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.beans.factory.ObjectProvider;
