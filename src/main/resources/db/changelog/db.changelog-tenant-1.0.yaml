@@ -1,0 +1,27 @@
+databaseChangeLog:
+
+- changeSet:
+    id: user
+    author: bjobes
+    changes:
+    - createTable:
+        tableName: user
+        columns:
+        - column:
+            name: id
+            type: BIGINT
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: branch_pkey
+        - column:
+            name: email
+            type: VARCHAR(255)
+            constraints:
+              nullable: false
+        - column:
+            name: name
+            type: VARCHAR(255)
+            constraints:
+              nullable: false
+

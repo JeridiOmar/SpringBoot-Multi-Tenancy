@@ -1,3 +1,19 @@
+server:
+  port: 8080
+liquibase:
+  url: jdbc:postgresql://localhost:5432/public
+spring:
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/public
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+
 multitenancy:
   datasource-cache:
     maximumSize: 100

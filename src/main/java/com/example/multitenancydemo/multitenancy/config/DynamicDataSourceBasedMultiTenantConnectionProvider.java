@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 
  */
 public class DynamicDataSourceBasedMultiTenantConnectionProvider
-        extends AbstractDataSourceBasedMultiTenantConnectionProviderImpl {
+        extends AbstractDataSourceBasedMultiTenantConnectionProviderImpl implements MultiTenantConnectionProvider {
 
     private static final String TENANT_POOL_NAME_SUFFIX = "DataSource";
 

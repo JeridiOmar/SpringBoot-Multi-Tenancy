@@ -33,6 +33,17 @@ public class LiquibaseConfig {
         liquibase.setDataSource(liquibaseDataSource.getIfAvailable());
         liquibase.setChangeLog(liquibaseProperties.getChangeLog());
         liquibase.setContexts(liquibaseProperties.getContexts());
+        liquibase.setDefaultSchema(liquibaseProperties.getDefaultSchema());
+        liquibase.setLiquibaseSchema(liquibaseProperties.getLiquibaseSchema());
+        liquibase.setLiquibaseTablespace(liquibaseProperties.getLiquibaseTablespace());
+        liquibase.setDatabaseChangeLogTable(liquibaseProperties.getDatabaseChangeLogTable());
+        liquibase.setDatabaseChangeLogLockTable(liquibaseProperties.getDatabaseChangeLogLockTable());
+        liquibase.setDropFirst(liquibaseProperties.isDropFirst());
+        liquibase.setShouldRun(liquibaseProperties.isEnabled());
+        liquibase.setLabels(liquibaseProperties.getLabels());
+        liquibase.setChangeLogParameters(liquibaseProperties.getParameters());
+        liquibase.setRollbackFile(liquibaseProperties.getRollbackFile());
+        liquibase.setTestRollbackOnUpdate(liquibaseProperties.isTestRollbackOnUpdate());
         return liquibase;
     }
 

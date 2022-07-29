@@ -1,0 +1,24 @@
+databaseChangeLog:
+
+- changeSet:
+    id: tenant-1
+    author: bjobes
+    changes:
+    - createTable:
+        tableName: tenant
+        columns:
+        - column:
+            name: tenant_id
+            type: VARCHAR(255)
+            constraints:
+              primaryKey: true
+              primaryKeyName: tenant_pkey
+        - column:
+            name: db
+            type: VARCHAR(255)
+        - column:
+            name: password
+            type: VARCHAR(255)
+        - column:
+              name: url
+              type: VARCHAR(255)
