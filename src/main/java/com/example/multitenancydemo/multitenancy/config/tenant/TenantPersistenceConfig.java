@@ -1,5 +1,6 @@
-package com.example.multitenancydemo.multitenancy.config;
+package com.example.multitenancydemo.multitenancy.config.tenant;
 
+import com.example.multitenancydemo.multitenancy.config.MultiTenantConnectionProvider;
 import org.hibernate.MultiTenancyStrategy;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;

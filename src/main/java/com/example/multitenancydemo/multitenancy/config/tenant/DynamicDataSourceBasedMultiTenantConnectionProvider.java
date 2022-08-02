@@ -1,5 +1,6 @@
-package com.example.multitenancydemo.multitenancy.config;
+package com.example.multitenancydemo.multitenancy.config.tenant;
 
+import com.example.multitenancydemo.multitenancy.config.MultiTenantConnectionProvider;
 import com.example.multitenancydemo.multitenancy.entity.Tenant;
 import com.example.multitenancydemo.multitenancy.repositories.TenantRepository;
 import com.example.multitenancydemo.util.EncryptionService;
